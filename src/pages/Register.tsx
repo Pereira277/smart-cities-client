@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { TSignUpSchema, signUpSchema } from "../lib/types";
+import { TSignUpSchema, signUpSchema } from "../lib/userTypes";
 import axios from "axios";
 
 function Register() {
@@ -15,8 +15,6 @@ function Register() {
   });
 
   const onSubmit = async (data: TSignUpSchema) => {
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
     const userData = {
       email: data.email,
       password: data.password,

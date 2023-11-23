@@ -1,15 +1,15 @@
 import BottomNav from "../components/BottomNav";
-import IssueList from "../components/IssuesList";
+import MyIssuesList from "../components/MyIssuesList";
 import Navbar from "../components/Navbar";
 
-function Home() {
+function MyIssues() {
   return (
     <div>
       <Navbar />
-      <IssueList />
+      <MyIssuesList />
       <BottomNav />
     </div>
   );
 }
 
-export default Home;
+export default MyIssues;

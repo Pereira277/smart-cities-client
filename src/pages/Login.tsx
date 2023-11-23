@@ -1,6 +1,6 @@
 import axios from "axios";
 import { NavLink } from "react-router-dom";
-import { TSignInSchema, signInSchema } from "../lib/types";
+import { TSignInSchema, signInSchema } from "../lib/userTypes";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
